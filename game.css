@@ -1,0 +1,60 @@
+  html, body {
+    height: 100%;
+    margin: 0;
+    background: black;
+    animation: Bg ease-in 3s;
+  }
+  body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+  }
+
+  #boxFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    text-align: center;
+    color: white;
+    font-size: 19pt;
+    width: 100%;
+    backgorund-color: tomato;
+  }  
+
+  canvas {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: steelblue;
+    animation: Bg-game ease-in 30s;
+  }
+
+#score {
+  color: white;
+  font-size: 15pt;
+  display: flex;
+  align-items: flex-start; 
+  margin: 0% 10pt;
+  padding: 12px;
+  width:fit-content;
+  background-color: coral;
+  border: 2px solid;
+}
+
+@keyframes Bg {
+  from {background-color: indianred;}
+  
+  to {background-image: brown;}
+}
+
+@keyframes Bg-game {
+  0% {background-color: mediumspringgreen}
+  25% {background-color: skyblue}
+  50% {background-color: hotpink}
+  75% {background-color: salmon}
+  100% {background-color: steelblue}
+}
+
