@@ -25,6 +25,13 @@ var apple = {
   y: 160,
   color: "crimson"
 };
+
+//The bad apple will cause the snake to lose it's length 
+var badApple = {
+  x: 70,
+  y: 110,
+  color: "yellow"
+}
 /* TO DO: create apple object below */
 
 /***MAIN FUNCTIONS***/
@@ -123,6 +130,14 @@ function drawApple() {
   ctx.fillRect(apple.x, apple.y, grid, grid);
 }
 
+/*drawBadApple*/
+function drawBadApple(){
+  const canvas = document.getElementById("game");
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = badApple.color;
+  ctx.fillRect(badApple.x, badApple.y, grid, grid);
+}
+
 /*drawSnake
 For each cell of the snake, fill in the grid at the location (cell.x, cell.y) with the snake.color 
 If the cell is the first cell in the array, use the drawCellWithBitmoji function to draw that cell as the user's bitmoji 
@@ -184,6 +199,10 @@ function lengthenSnakeByOne() {
   snake.currentLength = snake.currentLength + 1;
 }
 
+function shortenSnakeByOne() {
+  snake.currentLength = snake.currentLength - 1;
+}
+
 /*randomlyGenerateApple
 uses getRandomInt to generate a new x and y location for the apple within the grid
 this function does not draw the apple itself, it only stores the new locations in the apple object
@@ -191,6 +210,11 @@ this function does not draw the apple itself, it only stores the new locations i
 function randomlyGenerateApple() {
   apple.x = getRandomInt(0, 15) * grid;
   apple.y = getRandomInt(0, 15) * grid;
+}
+
+function randomlyGenBadApple() {
+  badApple.x = getRandomInt(0, 15) * grid;
+  badApple.x = getRandomInt(0, 15) * grid;
 }
 
 /*checkCrashItself
