@@ -1,7 +1,7 @@
 # Snake Game
 =================
 
-This is a snake game that requires the user to consume apples so that the snake may increase, and as the snake increases if the snake touches it's self the game will end. To control the game the user must the up, right, down, and left arrow ketys to move the snake. 
+This is a snake game that requires the user to consume apples so that the snake may increase, and as the snake increases if the snake touches it's self the game will end. To control the game the user must use the up, right, down, and left arrow keys to move the snake. 
 
 ## Features
 
