@@ -1,35 +1,29 @@
-Snake Squad
+# Snake Game
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is a snake game that requires the user to consume apples so that the snake may increase, and as the snake increases if the snake touches it's self the game will end. To control the game the user must the up, right, down, and left arrow ketys to move the snake. 
 
-In order to use the Snapchat login and bitmoji functionality on index.html, your Snap username will need to be added 
-to the project on SnapKit. 
+## Features
 
-In order to play the game: you are a snake that you can control with your arrow keys. 
-The goal of the game is to eat as many apples as you can without accidentally eating yourself. 
+- The Game is user friendly!
+- There is a score board that will keep track of the users wins while playing.
+- The snake's body has an outline for detail purposes. 
+- There are animations for both the background and canvas background.
 
+### Future Features 
+- An apple that will shrink the snake if it eats it.
+- Add power ups to make the game more fun.
+- Add a high score feature.
+- Add a game menu.
 
-Your Project
-------------
+## Examples:
 
-### ← README.md
+[This is the screenshot of the snake game!](https://drive.google.com/file/d/1GU6Zh3zlwyNNcVLVftc3J5AX2sNBJsiL/view?usp=sharing)
+[This is the screen recording of the snake game!](https://drive.google.com/file/d/1DYywLrX6hlYAXliIORmA2V-_7LPw190i/view?usp=sharing)
 
-That's this file, where you can tell people what this project does and how to read it.
+## Instructions:
 
-### ← index.html and index-login.js 
-
-These two files are responsible for the home page of the game, including the log in via Snapchat's Login Kit. 
-
-### ← game.html, game.css, and game.js
-
-These are responsible for running the snake squad game. game.html relies on game.css for styling and game.js for interactivity. 
-Most of your work will be in modifying game.js. 
-
-### ← assets
-
-You can drag in `assets`, like images or music, to add them to your project
-
+To play this game please click the ["SnakeGame"](https://josh-snake-game.glitch.me/game.html) link and enjoy!.
 
 Credits
 ------------
